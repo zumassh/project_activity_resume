@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Слободянюк Анастасия — Регистрация</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">О себе</a></li>
+        <li><a href="hobbies.html">Мои хобби</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="register.html" class="active">Регистрация</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="register-page">
+    <section class="register">
+      <h1>Регистрация</h1>
+
+      <form id="register-form" action="#" method="post">
+        <div class="form-field">
+          <label for="username">Имя</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Почта</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="password">Пароль (не меньше 8 символов)</label>
+          <input type="password" id="password" name="password" required minlength="8">
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">Согласен с условиями</label>
+        </div>
+
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+
+      <article class="result" id="result" hidden>
+        <h2>Вы ввели:</h2>
+        <ul class="result-list">
+          <li>Имя: <span id="out-name"></span></li>
+          <li>Почта: <span id="out-email"></span></li>
+          <li>Пароль: <span id="out-password"></span></li>
+          <li>Согласие с условиями: <span id="out-agree"></span></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Слободянюк Анастасия</p>
+  </footer>
+
+  <script src="register.js"></script>
+</body>
+</html>
